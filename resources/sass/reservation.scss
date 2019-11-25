@@ -1,0 +1,137 @@
+.reservation-page {
+  padding: 50px 0;
+  position: relative;
+
+  #cancelButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .section {
+    padding: 25px 0;
+    border-bottom: 2px solid $primary;
+    h5 {
+      font-size: 20px;
+      margin: 0;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+
+    }
+    .section-content{
+      margin-top: 8px;
+    }
+  }
+  .chat
+  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #btn-chat {
+    height: 100%;
+  }
+
+  .chat li
+  {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+  }
+
+  .chat li.left .chat-body
+  {
+    margin-left: 60px;
+  }
+
+  .chat li.right .chat-body
+  {
+    margin-right: 60px;
+  }
+
+
+  .chat li .chat-body p
+  {
+    margin: 0;
+    color: #777777;
+  }
+
+  .panel .slidedown .glyphicon, .chat .glyphicon
+  {
+    margin-right: 5px;
+  }
+
+  .panel-body
+  {
+    overflow-y: scroll;
+    height: 250px;
+  }
+
+
+  .rating {
+    display: block;
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+  }
+
+  .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .rating label:last-child {
+    position: static;
+  }
+
+  .rating label:nth-child(1) {
+    z-index: 5;
+  }
+
+  .rating label:nth-child(2) {
+    z-index: 4;
+  }
+
+  .rating label:nth-child(3) {
+    z-index: 3;
+  }
+
+  .rating label:nth-child(4) {
+    z-index: 2;
+  }
+
+  .rating label:nth-child(5) {
+    z-index: 1;
+  }
+
+  .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+
+  .rating label .icon {
+    float: left;
+    color: transparent;
+  }
+
+  .rating label:last-child .icon {
+    color: #000;
+  }
+
+  .rating:not(:hover) label input:checked ~ .icon,
+  .rating:hover label:hover input ~ .icon {
+    color: #09f;
+  }
+
+  .rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #09f;
+  }
+}
